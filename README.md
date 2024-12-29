@@ -3,5 +3,6 @@
 Steps Invloved:
 1. video upscaling and contrast improvement done in upscale_video.py
 2. obtained output_upscaled.mp4
-3. utilized it in final_detection.py for detecting number of objects in the video and timeframe of the objects in video
+3. utilized it in final_detection.py for detecting number of objects in the video and timeframe of the objects in video.
 4. The obtained results metrics and output video implemented in html at the end of final_detection.py file.
+5. additionally heatmap is added with the obtained output video in final_detection_with_heatmap.py and added_heatmap video is generated.
