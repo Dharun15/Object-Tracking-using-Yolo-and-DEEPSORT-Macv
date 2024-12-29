@@ -19,7 +19,7 @@ def processVideo():
     # Read video
     vs = cv.VideoCapture(path)
     # Load the model
-    model = YOLO('yolov8x.pt')
+    model = YOLO('yolov8n.pt')
 
     # Initialize DeepSort object tracker
     object_tracker = DeepSort(max_iou_distance=0.7,
@@ -56,6 +56,7 @@ def processVideo():
 
         # Predict objects in the current frame
         results = model.predict(frame, stream=False, conf=0.5)
+        print(results)
         detection_classes = results[0].names
         
         for result in results:
